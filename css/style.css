@@ -4,6 +4,7 @@
 body {
     margin: 0px;
     padding: 0px;
+    width: 100vw;
 }
 a {
     color: #153133;
@@ -151,13 +152,13 @@ margin: auto;
  text-align: center;   
 }
 
-/* If the screen size is 721px wide or more,*/
-@media screen and (min-width: 721px) {
+/* If the screen size is 851px wide or more,*/
+@media screen and (min-width: 851px) {
 body {
       font-size: 14px;
 }
 .box-title {
-        width: 50%; 
+        width: 50vw; 
 }    
 .cards {
         grid-template-columns: repeat(3, 1fr);
@@ -169,19 +170,18 @@ body {
     flex-direction: row;
 }
 }
-/* If the screen size is 720px wide or less*/
-@media screen and (max-width: 720px) {
+/* If the screen size is 850px wide or less*/
+@media screen and (max-width: 850px) {
 body {
       font-size: 12px;
 }
 .box-title {
-            width: 100%; 
+            width: 100vw; 
 }    
 .cards {
         grid-template-columns: 1fr;
-        grid-gap: 1.5em;            
         width: 90%;
-            margin: auto;
+        margin: auto;
 }
 .mapa {
     flex-direction: column;
