@@ -122,8 +122,26 @@ margin: auto;
     text-align: center;
     margin-bottom: 1.5em;
 }
+.mapa {
+    display: flex;
+ padding: 1.5em;
+ margin: 2.8em 1.5em;
+ background-color: #ebebeb;
+}
+.mapa div {
+    padding: 10px 40px 10px 40px;
+
+}
+.mapa p {
+    text-transform: uppercase;
+    font-family: "Assistant", sans-serif;
+    font-weight: bold;
+}
+.mapa li {
+    font-family: "Assistant", sans-serif;
+}
 .footer {
- border-top: 2px solid #3d586e;;
+ border-top: 2px solid #3d586e;
  padding: 1.5em;
  margin: 2.8em 1.5em;
 }
@@ -132,6 +150,7 @@ margin: auto;
     font-size: 1.2em;
  text-align: center;   
 }
+
 /* If the screen size is 721px wide or more,*/
 @media screen and (min-width: 721px) {
 body {
@@ -145,6 +164,9 @@ body {
         grid-gap: 1.5em;
         width: 90%;
         margin: auto;
+}
+.mapa {
+    flex-direction: row;
 }
 }
 /* If the screen size is 720px wide or less*/
@@ -160,5 +182,8 @@ body {
         grid-gap: 1.5em;            
         width: 90%;
             margin: auto;
+}
+.mapa {
+    flex-direction: column;
 }
 }
