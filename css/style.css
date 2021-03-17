@@ -7,7 +7,7 @@ body {
     font-size: 14px;
 }
 a {
-    color: #3d586e;
+    color: #153133;
     transition: 0.3s;
     text-decoration: none;
 }
@@ -20,28 +20,17 @@ a:hover {
     align-items: center;
     background-image:  linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.6)), url("../images/background.jpg"); /* The image used */
   background-color: #cccccc; 
-  height: 500px;
+  height: 100vh;
   background-position: center; 
   background-repeat: no-repeat; 
   background-size: cover; 
-}
-#descripcion {
-    font-family: "Assistant", sans-serif;
-    font-size: 1.3em;
-    font-style: italic;
-    margin-top: 0;
-}
-#registrarse {
-    font-family: "Assistant", sans-serif;
-    font-family: 0.8em;
-    padding-top: -15px;
 }
 .box-title {
 background-color: rgba(255,255,255,0.8);
 width: 50%; 
 height: auto;
 text-align: center;
-padding: 40px 40px;
+padding: 2.8em 2.8em;
 }
 .box-title h1 {
     font-size: 4em;
@@ -49,22 +38,37 @@ padding: 40px 40px;
     font-family: "Nunito", sans-serif;
     margin-bottom: 0;
 }
-
-.button-blue {
-    background-color: #346164;
+#descripcion {
+    font-family: "Assistant", sans-serif;
+    font-size: 1.3em;
+    font-style: italic;
+    margin-top: 0;
+    margin-bottom: 1.5em;}
+#registrarse {
+    font-family: "Assistant", sans-serif;
+    font-family: 0.8em;
+    padding-top: -1.1px;
+}
+button {
+    background-color: #284b4e;
+    padding: 1.1em 4.8em;
+    border-radius: 4px;
+    display: inline-block;
+}
+button>a {
     font-family: "Assistant", sans-serif;
     font-size: 1.3em;
     color: #FFF;
-    padding: 16px 68px;
-    border-radius: 4px;
-    display: inline-block;
-  }
-.button-blue:hover {
-    background-color: #555555;
+}
+button>a:hover {
+    text-decoration: none;
+}
+button:hover {
+    background-color: #303030;
     color: #FFF;
 }
 .container {
-    padding: 50px 0 30px 0;
+    padding: 3.5em 0 2em 0;
     height: auto;
 }
 .container h2 {
@@ -78,8 +82,8 @@ padding: 40px 40px;
 .cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
-padding: 20px 0;
+    grid-gap: 1.5em;
+padding: 1.5em 0;
 width: 90%;
 margin: auto;
 }
@@ -87,8 +91,8 @@ margin: auto;
     border-radius: 10px;
     box-shadow: 0 0 16px rgba(0,0,0,0.1);
     text-align: center;
-    padding: 24px;
-    margin: 8px;
+    padding: 1.7em;
+    margin: 0.5em;
 }
 .card-white img {
     width: 180px;
@@ -110,12 +114,12 @@ margin: auto;
     font-size: 1.2em;
     color: #313131;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 1.5em;
 }
 .footer {
  border-top: 2px solid #3d586e;;
- padding: 20px;
- margin: 40px 20px 40px 20px;
+ padding: 1.5em;
+ margin: 2.8em 1.5em;
 }
 .footer p {
     font-family: "Assistant", sans-serif;
@@ -133,7 +137,7 @@ margin: auto;
     width: auto;
   }
 .footer {
-    margin: 0px 20px 40px 20px;
+    margin: 0px 1.5em 2.8em 1.5em;
 }
 }
   
