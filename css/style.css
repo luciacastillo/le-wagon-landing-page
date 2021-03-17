@@ -4,7 +4,7 @@
 body {
     margin: 0px;
     padding: 0px;
-    font-size: 20px;
+    font-size: 14px;
 }
 a {
     color: #153133;
@@ -136,7 +136,10 @@ margin: auto;
 
 
 @media (min-width: 300px) {
-   .box-title {
+    body {
+        font-size: 20px;
+    }
+    .box-title {
         width: 100%;
     } 
     .container {
@@ -145,15 +148,13 @@ margin: auto;
     .cards {
       grid-template-columns: 1fr;
     }
-    #descripcion {
-        font-size: 2em;
-    }  
-    #registrarse{
-        font-family: 1.2em
-    }
+
   }
   
   @media (min-width: 700px) {
+body {
+    font-size: 20px;
+}
     .box-title {
          width: 90%;
      } 
@@ -163,15 +164,13 @@ margin: auto;
      .cards {
        grid-template-columns: 1fr;
      }
-   #descripcion {
-       font-size: 2em;
-   }  
-   #registrarse{
-       font-family: 1.2em
-   }
+
    } 
 
-  @media (min-width: 1000px) {
+  @media (min-width: 850px) {
+    body {
+        font-size: 14px;
+    }
          .box-title {
         width: 50%;
     } 
