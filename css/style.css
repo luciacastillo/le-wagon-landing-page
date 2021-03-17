@@ -4,7 +4,6 @@
 body {
     margin: 0px;
     padding: 0px;
-    font-size: 14px;
 }
 a {
     color: #153133;
@@ -21,13 +20,13 @@ a:hover {
     background-image:  linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.6)), url("../images/background.jpg"); /* The image used */
   background-color: #cccccc; 
   height: 100vh;
+  width: 100vw;
   background-position: center; 
   background-repeat: no-repeat; 
   background-size: cover; 
 }
 .box-title {
 background-color: rgba(255,255,255,0.8);
-width: 50%; 
 height: auto;
 text-align: center;
 padding: 2.8em 2.8em;
@@ -73,7 +72,7 @@ button:hover {
     height: auto;
 }*/
 .container {
-    width: 900px;
+    width: 100vw;
     margin: 60px auto;
   }
 .container h2 {
@@ -83,11 +82,11 @@ button:hover {
     color: #3d3d3d;
     text-align: center;    
     letter-spacing: 2px;
+    margin-bottom: 40px;
 }
 .cards {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1.5em;}
+}
     /* 
 padding: 1.5em 0;
 width: 90%;
@@ -133,63 +132,33 @@ margin: auto;
     font-size: 1.2em;
  text-align: center;   
 }
-
-
-@media (min-width: 300px) {
-    body {
-        font-size: 20px;
-    }
-    .box-title {
-        width: 100%;
-    } 
-    .container {
-      width: 90%;
-      margin: auto;
-    }
-    .cards {
-      grid-template-columns: 1fr;
-    }
-
-  }
-  
-  @media (min-width: 700px) {
+/* If the screen size is 721px wide or more,*/
+@media screen and (min-width: 721px) {
 body {
-    font-size: 20px;
+      font-size: 14px;
 }
-    .box-title {
-         width: 90%;
-     } 
-     .container {
-       width: 90%;
-       margin: auto;
-     }
-     .cards {
-       grid-template-columns: 1fr;
-     }
-
-   } 
-
-  @media (min-width: 900px) {
-    body {
-        font-size: 14px;
-    }
-         .box-title {
-        width: 50%;
-    } 
-    .container {
-      width: 90%;
-      margin: auto;
-    }
-    .cards {
-      grid-template-columns: 1fr 1fr 1fr;
-    }
-  } 
-/*
-.card-white {
-    width: auto;
-  }
-.footer {
-    margin: 0px 1.5em 2.8em 1.5em;
+.box-title {
+        width: 50%; 
+}    
+.cards {
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1.5em;
+        width: 90%;
+        margin: auto;
 }
-}*/
-  
+}
+/* If the screen size is 720px wide or less*/
+@media screen and (max-width: 720px) {
+body {
+      font-size: 12px;
+}
+.box-title {
+            width: 100%; 
+}    
+.cards {
+        grid-template-columns: 1fr;
+        grid-gap: 1.5em;            
+        width: 90%;
+            margin: auto;
+}
+}
