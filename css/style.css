@@ -4,7 +4,7 @@
 body {
     margin: 0px;
     padding: 0px;
-    font-size: 14px;
+    font-size: 20px;
 }
 a {
     color: #153133;
@@ -145,7 +145,12 @@ margin: auto;
     .cards {
       grid-template-columns: 1fr;
     }
-    
+    #descripcion {
+        font-size: 2em;
+    }  
+    #registrarse{
+        font-family: 1.2em
+    }
   }
   
   @media (min-width: 700px) {
@@ -158,8 +163,14 @@ margin: auto;
      .cards {
        grid-template-columns: 1fr;
      }
-     
+   #descripcion {
+       font-size: 2em;
+   }  
+   #registrarse{
+       font-family: 1.2em
+   }
    } 
+
   @media (min-width: 1000px) {
          .box-title {
         width: 50%;
