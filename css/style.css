@@ -150,7 +150,7 @@ margin: auto;
   
   @media (min-width: 700px) {
     .box-title {
-         width: 70%;
+         width: 90%;
      } 
      .container {
        width: 700px;
